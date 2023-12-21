@@ -1,0 +1,78 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the content takes at least the full height of the viewport */
+  border: 45px solid black;
+}
+
+header {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #f33838;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-grow: 1; /* Allow the container to grow to fill the remaining space */
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /* Push the footer to the bottom of the container */
+}
+
+#searchGames {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+#searchGames .col-md-6,
+#searchGames .col-md-4 {
+  margin-bottom: 10px;
+}
